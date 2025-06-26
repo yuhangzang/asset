@@ -1,1 +1,5 @@
-scholarly==1.7.11
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+# Install scholarly from develop branch
+git+https://github.com/scholarly-python-package/scholarly.git@develop

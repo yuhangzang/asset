@@ -2,8 +2,8 @@ name: Scrape Google Scholar Citations
 
 on:
   schedule:
-    # Run daily at 2 AM UTC
-    - cron: '0 2 * * *'
+    # Run weekly at 2 AM UTC on Sunday
+    - cron: '0 2 * * 0'
   workflow_dispatch:
     # Allow manual triggering
   push:
@@ -15,12 +15,17 @@ on:
 jobs:
   scrape-and-update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,16 +35,44 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install requests beautifulsoup4
+        # Install scholarly from develop branch
+        pip install git+https://github.com/scholarly-python-package/scholarly.git@develop
     
-    - name: Run Google Scholar scraper
+    - name: Run Google Scholar scraper (scholarly library)
+      timeout-minutes: 90
+      env:
+        PYTHONUNBUFFERED: 1
       run: |
-        python scrape_scholar.py hW23VKIAAAAJ
+        # Add some network debugging
+        echo "Network connectivity test:"
+        curl -I https://scholar.google.com || echo "Google Scholar not directly accessible"
+        
+        # Try running the scholarly-based scraper
+        python scrape_scholar.py hW23VKIAAAAJ || {
+          echo "First attempt failed, trying with longer delay..."
+          sleep 120
+          python scrape_scholar.py hW23VKIAAAAJ || {
+            echo "Second attempt failed, checking for existing data..."
+            if [ -f "gs_data.json" ]; then
+              echo "Found existing data file, will commit that instead"
+              ls -la gs_data.json
+            else
+              echo "No existing data found, scraping failed completely"
+              exit 1
+            fi
+          }
+        }
     
     - name: Configure Git
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+    
+    - name: Create and switch to google-scholar branch
+      run: |
+        git fetch origin google-scholar 2>/dev/null || echo "google-scholar branch doesn't exist yet"
+        git checkout -b google-scholar 2>/dev/null || git checkout google-scholar
     
     - name: Check for changes
       id: verify-changed-files
@@ -50,15 +83,27 @@ jobs:
           echo "changed=false" >> $GITHUB_OUTPUT
         fi
     
-    - name: Commit and push changes
+    - name: Commit and push to google-scholar branch
       if: steps.verify-changed-files.outputs.changed == 'true'
       run: |
         git add gs_data.json
         git commit -m "Update Google Scholar citations data - $(date +'%Y-%m-%d %H:%M:%S')"
-        git push
+        
+        # Try different push strategies
+        git push origin google-scholar --force-with-lease || {
+          echo "Force-with-lease failed, trying regular push..."
+          git push origin google-scholar || {
+            echo "Regular push failed, trying to set upstream and push..."
+            git push --set-upstream origin google-scholar || {
+              echo "All push attempts failed. Check repository permissions."
+              echo "Data was successfully generated but could not be pushed."
+              exit 1
+            }
+          }
+        }
     
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: scholar-data
         path: gs_data.json
