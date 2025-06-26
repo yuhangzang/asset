@@ -1,0 +1,65 @@
+name: Scrape Google Scholar Citations
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+  push:
+    branches: [ main ]
+    paths:
+      - 'scrape_scholar.py'
+      - '.github/workflows/scrape-scholar.yml'
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run Google Scholar scraper
+      run: |
+        python scrape_scholar.py hW23VKIAAAAJ
+    
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+    
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.verify-changed-files.outputs.changed == 'true'
+      run: |
+        git add gs_data.json
+        git commit -m "Update Google Scholar citations data - $(date +'%Y-%m-%d %H:%M:%S')"
+        git push
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: scholar-data
+        path: gs_data.json
+        retention-days: 30
