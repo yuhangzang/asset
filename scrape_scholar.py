@@ -482,21 +482,32 @@ def main():
     data = scraper.scrape_all()
     
     if data:
-        # Output to JSON file
-        output_file = 'gs_data.json'
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-        
-        print(f"Final data saved to {output_file}")
-        
-        # Print summary
-        print("\nSummary:")
-        print(f"Name: {data.get('name', 'N/A')}")
-        print(f"Affiliation: {data.get('affiliation', 'N/A')}")
-        print(f"Total Citations: {data.get('total_citations', 0)}")
-        print(f"H-index: {data.get('h_index', 0)}")
-        print(f"i10-index: {data.get('i10_index', 0)}")
-        print(f"Publications: {len(data.get('publications', []))}")
+        # Check if total_citations is 0
+        if data.get('total_citations', 0) == 0:
+            print("\nSkipping save: total_citations is 0")
+            print("\nSummary (not saved):")
+            print(f"Name: {data.get('name', 'N/A')}")
+            print(f"Affiliation: {data.get('affiliation', 'N/A')}")
+            print(f"Total Citations: {data.get('total_citations', 0)}")
+            print(f"H-index: {data.get('h_index', 0)}")
+            print(f"i10-index: {data.get('i10_index', 0)}")
+            print(f"Publications: {len(data.get('publications', []))}")
+        else:
+            # Output to JSON file
+            output_file = 'gs_data.json'
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            
+            print(f"Final data saved to {output_file}")
+            
+            # Print summary
+            print("\nSummary:")
+            print(f"Name: {data.get('name', 'N/A')}")
+            print(f"Affiliation: {data.get('affiliation', 'N/A')}")
+            print(f"Total Citations: {data.get('total_citations', 0)}")
+            print(f"H-index: {data.get('h_index', 0)}")
+            print(f"i10-index: {data.get('i10_index', 0)}")
+            print(f"Publications: {len(data.get('publications', []))}")
     else:
         print("Failed to scrape data")
         sys.exit(1)
