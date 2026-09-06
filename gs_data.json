@@ -1,0 +1,925 @@
+{
+  "name": "Yuhang Zang",
+  "affiliation": "Shanghai AI Laboratory",
+  "interests": [
+    "Artificial Intelligence"
+  ],
+  "email_domain": "@pjlab.org.cn",
+  "homepage": "https://yuhangzang.github.io/",
+  "total_citations": 12437,
+  "h_index": 43,
+  "i10_index": 72,
+  "citations_per_year": {
+    "2020": 74,
+    "2021": 194,
+    "2022": 339,
+    "2023": 455,
+    "2024": 1630,
+    "2025": 4338,
+    "2026": 5360
+  },
+  "publications": [
+    {
+      "title": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 1204,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:UebtZRa9Y70C"
+    },
+    {
+      "title": "Efficient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network",
+      "authors": "",
+      "venue": "",
+      "year": 2019,
+      "citations": 790,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "title": "InternLM2 Technical Report",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 789,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:Se3iqnhoufwC"
+    },
+    {
+      "title": "VLMEvalKit: An Open-Source Toolkit for Evaluating Large Multi-Modality Models",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 628,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:4TOpqqG69KYC"
+    },
+    {
+      "title": "Visual-RFT: Visual Reinforcement Fine-Tuning",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 607,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:O3NaXMp0MMsC"
+    },
+    {
+      "title": "OpenCompass: A universal evaluation platform for foundation models, 2023",
+      "authors": "",
+      "venue": "",
+      "year": null,
+      "citations": 552,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:zA6iFVUQeVQC"
+    },
+    {
+      "title": "Long-CLIP: Unlocking the Long-Text Capability of CLIP",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 538,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:roLk4NBRz8UC"
+    },
+    {
+      "title": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 522,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:3fE2CSJIrl8C"
+    },
+    {
+      "title": "InternLM-XComposer2: Mastering Free-form Text-Image Composition and Comprehension in Vision-Language Large Model",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 465,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:_FxGoFyzp5QC"
+    },
+    {
+      "title": "Seesaw Loss for Long-Tailed Instance Segmentation",
+      "authors": "",
+      "venue": "",
+      "year": 2021,
+      "citations": 436,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "title": "Open-Vocabulary DETR with Conditional Matching",
+      "authors": "",
+      "venue": "",
+      "year": 2022,
+      "citations": 410,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "title": "Conical visual concentration for efficient large vision-language models",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 362,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:4OULZ7Gr8RgC"
+    },
+    {
+      "title": "InternLM-XComposer-2.5: A Versatile Large Vision Language Model Supporting Long-Contextual Input and Output",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 327,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:_kc_bZDykSQC"
+    },
+    {
+      "title": "Unified Vision and Language Prompt Learning",
+      "authors": "",
+      "venue": "",
+      "year": 2022,
+      "citations": 298,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "title": "Scene Text Detection with Supervised Pyramid Context Network",
+      "authors": "",
+      "venue": "",
+      "year": 2019,
+      "citations": 279,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:u5HHmVD_uO8C"
+    },
+    {
+      "title": "Alpha-CLIP: A CLIP Model Focusing on Wherever You Want",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 264,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "title": "Contextual object detection with multimodal large language models",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 263,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:xtRiw3GOFMkC"
+    },
+    {
+      "title": "MMLongBench-Doc: Benchmarking Long-context Document Understanding with Visualizations",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 241,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:ULOm3_A8WrAC"
+    },
+    {
+      "title": "Streaming long video understanding with large language models",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 239,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:NhqRSupF_l8C"
+    },
+    {
+      "title": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 232,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:hqOjcs7Dif8C"
+    },
+    {
+      "title": "Unified Reward Model for Multimodal Understanding and Generation",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 202,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:ns9cj8rnVeAC"
+    },
+    {
+      "title": "FASA: Feature Augmentation and Sampling Adaptation for Long-Tailed Instance Segmentation",
+      "authors": "",
+      "venue": "",
+      "year": 2021,
+      "citations": 198,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:qjMakFHDy7sC"
+    },
+    {
+      "title": "Mvsgaussian: Fast generalizable gaussian splatting reconstruction from multi-view stereo",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 174,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:aqlVkmm33-oC"
+    },
+    {
+      "title": "Ovo-bench: How far is your video-llms from real-world online video understanding?",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 138,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:iH-uZ7U-co4C"
+    },
+    {
+      "title": "Dispider: Enabling video llms with active real-time interaction via disentangled perception, decision, and reaction",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 133,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:r0BpntZqJG4C"
+    },
+    {
+      "title": "MotionClone: Training-Free Motion Cloning for Controllable Video Generation",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 127,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:kNdYIx-mwKoC"
+    },
+    {
+      "title": "Sam2long: Enhancing sam 2 for long video segmentation with a training-free memory tree",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 118,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:mVmsd5A6BfQC"
+    },
+    {
+      "title": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 110,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:Zph67rFs4hoC"
+    },
+    {
+      "title": "Intern-s1: A scientific multimodal foundation model",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 107,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:OU6Ihb5iCvQC"
+    },
+    {
+      "title": "Mineru2. 5: A decoupled vision-language model for efficient high-resolution document parsing",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 104,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:vRqMK49ujn8C"
+    },
+    {
+      "title": "Unified multimodal chain-of-thought reward model through reinforcement fine-tuning",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 91,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:35N4QoGY0k4C"
+    },
+    {
+      "title": "Visionary-r1: Mitigating shortcuts in visual reasoning with reinforcement learning",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 91,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:70eg2SAEIzsC"
+    },
+    {
+      "title": "Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable Text-to-Image Reinforcement Learning",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 86,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:WbkHhVStYXYC"
+    },
+    {
+      "title": "Internlm-xcomposer2. 5-reward: A simple yet effective multi-modal reward model",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 81,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:TFP_iSt0sucC"
+    },
+    {
+      "title": "VideoRoPE: What Makes for Good Video Rotary Position Embedding?",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 71,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:isC4tDSrTZIC"
+    },
+    {
+      "title": "SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 66,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:SP6oXDckpogC"
+    },
+    {
+      "title": "Beyond fixed: Training-free variable-length denoising for diffusion large language models",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 65,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:SdhP9T11ey4C"
+    },
+    {
+      "title": "InternLM-XComposer2. 5-OmniLive: A Comprehensive Multimodal System for Long-term Streaming Video and Audio Interactions",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 59,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:L8Ckcad2t8MC"
+    },
+    {
+      "title": "Sim-cot: Supervised implicit chain-of-thought",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 58,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:tOudhMTPpwUC"
+    },
+    {
+      "title": "Visual Agentic Reinforcement Fine-Tuning",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 53,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:2P1L_qKh6hAC"
+    },
+    {
+      "title": "SongGen: A Single Stage Auto-regressive Transformer for Text-to-Song Generation",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 53,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:blknAaTinKkC"
+    },
+    {
+      "title": "Mia-dpo: Multi-image augmented direct preference optimization for large vision-language models",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 49,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:9ZlFYXVOiuMC"
+    },
+    {
+      "title": "Mm-ifengine: Towards multimodal instruction following",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 48,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:RYcK_YlVTxYC"
+    },
+    {
+      "title": "WildClawBench: A Benchmark for Real-World, Long-Horizon Agent Evaluation",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 41,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:tzM49s52ZIMC"
+    },
+    {
+      "title": "Dicache: Let diffusion model determine its own cache",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 36,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:p2g8aNsByqUC"
+    },
+    {
+      "title": "Light-a-video: Training-free video relighting via progressive light fusion",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 36,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:maZDTaKrznsC"
+    },
+    {
+      "title": "others. 2024. Mmlongbench-doc: Benchmarking long-context document understanding with visualizations",
+      "authors": "",
+      "venue": "",
+      "year": 1,
+      "citations": 35,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:zLWjf1WUPmwC"
+    },
+    {
+      "title": "Caprl: Stimulating dense image caption capabilities via reinforcement learning",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 32,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:sSrBHYA8nusC"
+    },
+    {
+      "title": "Rar: Retrieving and ranking augmented mllms for visual recognition",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 32,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:LkGwnXOMwfcC"
+    },
+    {
+      "title": "Spatial-ssrl: Enhancing spatial understanding via self-supervised reinforcement learning",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 31,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:mvPsJ3kp5DgC"
+    },
+    {
+      "title": "Overcoming the Pitfalls of Vision-Language Model Finetuning for OOD Generalization",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 31,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:ufrVoPGSRksC"
+    },
+    {
+      "title": "Towards storage-efficient visual document retrieval: An empirical study on reducing patch-level embeddings",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 24,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:cFHS6HbyZ2cC"
+    },
+    {
+      "title": "1st Place Solutions for OpenImage2019--Object Detection and Instance Segmentation",
+      "authors": "",
+      "venue": "",
+      "year": 2020,
+      "citations": 24,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:9yKSN-GCB0IC"
+    },
+    {
+      "title": "Advancing Complex Video Object Segmentation via Progressive Concept Construction",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 22,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:dshw04ExmUIC"
+    },
+    {
+      "title": "Deciphering cross-modal alignment in large vision-language models with modality integration rate",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 21,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:4DMP91E08xMC"
+    },
+    {
+      "title": "BoostStep: Boosting mathematical capability of Large Language Models via improved single-step reasoning",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 20,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:j3f4tGmQtD8C"
+    },
+    {
+      "title": "Semi-Supervised and Long-Tailed Object Detection with CascadeMatch",
+      "authors": "",
+      "venue": "",
+      "year": 2023,
+      "citations": 17,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "title": "X-Prompt: Towards Universal In-Context Image Generation in Auto-Regressive Vision Language Foundation Models",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 16,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:7PzlFSSx8tAC"
+    },
+    {
+      "title": "Intern-s1-pro: Scientific multimodal foundation model at trillion scale",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 15,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:kzcrU_BdoSEC"
+    },
+    {
+      "title": "Broadway: Boost your text-to-video generation model in a training-free way",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 15,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:dfsIfKJdRG4C"
+    },
+    {
+      "title": "Bootstrapping grounded chain-of-thought in multimodal llms for data-efficient model adaptation",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 14,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:abG-DnoFyZgC"
+    },
+    {
+      "title": "G2rpo: Granular grpo for precise reward in flow models",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 14,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:1qzjygNMrQYC"
+    },
+    {
+      "title": "Bootstrap3d: Improving 3d content creation with synthetic data",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 14,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:MXK_kJrjxJIC"
+    },
+    {
+      "title": "Hiflow: Training-free high-resolution image generation with flow-aligned guidance",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 13,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:J_g5lzvAfSwC"
+    },
+    {
+      "title": "UniGenBench++: A Unified Semantic Evaluation Benchmark for Text-to-Image Generation",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 13,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:eflP2zaiRacC"
+    },
+    {
+      "title": "Unified Personalized Reward Model for Vision Generation",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 12,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:WqliGbK-hY8C"
+    },
+    {
+      "title": "ScaleCap: Inference-Time Scalable Image Captioning via Dual-Modality Debiasing",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 12,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:a0OBvERweLwC"
+    },
+    {
+      "title": "On-Device Domain Generalization",
+      "authors": "",
+      "venue": "",
+      "year": 2022,
+      "citations": 11,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "title": "Star-bench: Probing deep spatio-temporal reasoning as audio 4d intelligence",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 10,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:q3oQSFYPqjQC"
+    },
+    {
+      "title": "Fine-grained grpo for precise preference alignment in flow models",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 10,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:PELIpwtuRlgC"
+    },
+    {
+      "title": "Arm-thinker: Reinforcing multimodal generative reward models with agentic tool use and visual reasoning",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 10,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:WA5NYHcadZ8C"
+    },
+    {
+      "title": "KPNet: Towards Minimal Face Detector",
+      "authors": "",
+      "venue": "",
+      "year": 2020,
+      "citations": 10,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "title": "Wildavatar: Learning in-the-wild 3d avatars from the web",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 9,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:fPk4N6BV_jEC"
+    },
+    {
+      "title": "EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 8,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:PR6Y55bgFSsC"
+    },
+    {
+      "title": "Deciphering cross-modal alignment in large vision-language models via modality integration rate",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 8,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:ye4kPcJQO24C"
+    },
+    {
+      "title": "SPARK: Synergistic Policy And Reward Co-Evolving Framework",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 8,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:08ZZubdj9fEC"
+    },
+    {
+      "title": "Trust Your Critic: Robust Reward Modeling and Reinforcement Learning for Faithful Image Editing and Generation",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 7,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:_Ybze24A_UAC"
+    },
+    {
+      "title": "Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 7,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:ZuybSZzF8UAC"
+    },
+    {
+      "title": "LSVOS 2025 Challenge Report: Recent Advances in Complex Video Object Segmentation",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 7,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:5Ul4iDaHHb8C"
+    },
+    {
+      "title": "Unified Scene Representation and Reconstruction for 3D Large Language Models",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 7,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:0EnyYjriUFMC"
+    },
+    {
+      "title": "EndoCoT: Scaling Endogenous Chain-of-Thought Reasoning in Diffusion Models",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 6,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:uLbwQdceFCQC"
+    },
+    {
+      "title": "GraphThinker: Reinforcing Temporally Grounded Video Reasoning with Event Graph Thinking",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 6,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:-_dYPAW6P2MC"
+    },
+    {
+      "title": "Demo-icl: In-context learning for procedural video knowledge acquisition",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 5,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:tKAzc9rXhukC"
+    },
+    {
+      "title": "Trivia: Self-supervised fine-tuning of vision-language models for table recognition",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 5,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:t6usbXjVLHcC"
+    },
+    {
+      "title": "Think Visually, Reason Textually: Vision-Language Synergy in ARC",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 5,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:XiVPGOgt02cC"
+    },
+    {
+      "title": "V3Det Challenge 2024 on Vast Vocabulary and Open Vocabulary Object Detection: Methods and Results",
+      "authors": "",
+      "venue": "",
+      "year": 2024,
+      "citations": 4,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:KlAtU1dfN6UC"
+    },
+    {
+      "title": "CapRL++: Unified Reinforcement Learning with Verifiable Rewards for Dense Image and Video Captioning",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 3,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:nrtMV_XWKgEC"
+    },
+    {
+      "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 3,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:W5xh706n7nkC"
+    },
+    {
+      "title": "SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience. CoRR abs/2508.04700 (2025)",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 3,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:epqYDVWIO7EC"
+    },
+    {
+      "title": "Unified vision and language prompt learning,(2022)",
+      "authors": "",
+      "venue": "",
+      "year": null,
+      "citations": 3,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:URolC5Kub84C"
+    },
+    {
+      "title": "Pyramiddrop: Accelerating your large vision-language models via pyramid visual redundancy reduction. arXiv Preprint, 2024",
+      "authors": "",
+      "venue": "",
+      "year": null,
+      "citations": 3,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:vDijr-p_gm4C"
+    },
+    {
+      "title": "ETCHR: Editing To Clarify and Harness Reasoning",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 2,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:j8SEvjWlNXcC"
+    },
+    {
+      "title": "SetCon: Towards Open-Ended Referring Segmentation via Set-Level Concept Prediction",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 2,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:evX43VCCuoAC"
+    },
+    {
+      "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:ML0RJ9NH7IQC"
+    },
+    {
+      "title": "AdaGRPO: A Capability-Aware Adaptive Enhancement for Flow-based GRPO",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:9Nmd_mFXekcC"
+    },
+    {
+      "title": "OVO-S-Bench: A Hierarchical Benchmark for Streaming Spatial Intelligence in Multimodal LLMs",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:XD-gHx7UXLsC"
+    },
+    {
+      "title": "From Sparse to Dense: Multi-View GRPO for Flow Models via Augmented Condition Space",
+      "authors": "",
+      "venue": "",
+      "year": 2026,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:Fu2w8maKXqMC"
+    },
+    {
+      "title": "Generative Photographic Control for Scene-Consistent Video Cinematic Editing",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:olpn-zPbct0C"
+    },
+    {
+      "title": "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning",
+      "authors": "",
+      "venue": "",
+      "year": 2025,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:u9iWguZQMMsC"
+    },
+    {
+      "title": "Real-World Object Detection",
+      "authors": "",
+      "venue": "",
+      "year": 2023,
+      "citations": 1,
+      "pub_url": "",
+      "key": "hW23VKIAAAAJ:eQOLeE2rZwMC"
+    }
+  ],
+  "last_updated": "2026-09-06 06:55:41",
+  "scraper_method": "scholarly"
+}
