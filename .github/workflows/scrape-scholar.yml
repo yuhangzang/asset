@@ -15,6 +15,7 @@ on:
 jobs:
   scrape-and-update:
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
     permissions:
       contents: write
       pages: write
@@ -37,33 +38,26 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests beautifulsoup4
         # scholarly uses the bibtexparser 1.x API
-        pip install "bibtexparser<2" git+https://github.com/scholarly-python-package/scholarly.git@develop
-        python -c "from scholarly import scholarly, ProxyGenerator"
+        pip install "bibtexparser<2" "free-proxy==1.0.6" git+https://github.com/scholarly-python-package/scholarly.git@develop
+        python -c "from scholarly import scholarly, ProxyGenerator; from fp.fp import FreeProxy; import inspect; inspect.signature(FreeProxy.get_proxy_list).bind(None)"
     
     - name: Run Google Scholar scraper (scholarly library)
-      timeout-minutes: 90
+      timeout-minutes: 6
       env:
         PYTHONUNBUFFERED: 1
       run: |
-        # Add some network debugging
-        echo "Network connectivity test:"
-        curl -I https://scholar.google.com || echo "Google Scholar not directly accessible"
-        
-        # Try running the scholarly-based scraper
-        python scrape_scholar.py hW23VKIAAAAJ || {
-          echo "First attempt failed, trying with longer delay..."
-          sleep 120
-          python scrape_scholar.py hW23VKIAAAAJ || {
-            echo "Second attempt failed, checking for existing data..."
-            if [ -f "gs_data.json" ]; then
-              echo "Found existing data file, will commit that instead"
-              ls -la gs_data.json
-            else
-              echo "No existing data found, scraping failed completely"
-              exit 1
-            fi
-          }
-        }
+        echo "Scraping Google Scholar with a 5-minute process deadline"
+        if timeout --signal=TERM --kill-after=10s 300s python -u -c "import logging, runpy; from scholarly import scholarly; logging.basicConfig(level=logging.INFO); scholarly.set_timeout(15); scholarly.set_retries(2); runpy.run_path('scrape_scholar.py', run_name='__main__')" hW23VKIAAAAJ; then
+          echo "Scraper process completed"
+        else
+          status=$?
+          if [ "$status" -eq 124 ] || [ "$status" -eq 137 ]; then
+            echo "::error::Google Scholar scrape exceeded 5 minutes. Existing published data is unchanged."
+          else
+            echo "::error::Google Scholar scraper failed with exit code $status."
+          fi
+          exit "$status"
+        fi
     
     - name: Configure Git
       run: |
